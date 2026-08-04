@@ -48,6 +48,16 @@
   <tr><td>文字朗读（TTS）</td><td>调用 Android <strong>系统内置 TTS 引擎</strong>朗读普通 PDF 选中行</td><td>否——<strong>无需联网、无需麦克风权限</strong></td><td>否</td></tr>
   <tr><td>位置 / 相机 / 麦克风 / 通讯录 / 电话 等</td><td>—</td><td><strong>不申请</strong></td><td>—</td></tr>
 </table>
+
+<h3>鸿蒙版补充说明（HarmonyOS NEXT）</h3>
+<p>本应用鸿蒙端（HarmonyOS NEXT / OpenHarmony）使用以下 <code>user_grant</code> 类型权限，两者均仅在您主动触发相应功能时由系统弹窗申请，App 不自动申请、不静默使用、不在后台持续运行：</p>
+<table>
+  <tr><th>权限名称（ohos.permission.*）</th><th>用途</th><th>是否需用户授权</th><th>是否联网</th></tr>
+  <tr><td><code>READ_IMAGEVIDEO</code></td><td>通过鸿蒙系统文件选择器 <code>DocumentViewPicker</code> 读取您主动选择的 PDF 教材文件</td><td>是（仅在您点击「导入 PDF」时由系统弹窗）</td><td>否</td></tr>
+  <tr><td><code>READ_AUDIO</code></td><td>播放点读音频与 TTS 朗读音频时读取本地音频资源</td><td>是（首次播放时由系统自动授予）</td><td>否</td></tr>
+</table>
+<p>以上两个权限均不会用于读取您的相册、通讯录、麦克风或其他无关数据；权限申请仅在您触发对应操作时弹出，您可在鸿蒙「设置 → 隐私与安全」中随时关闭或撤销。</p>
+
 <p>提交上架前，开发者应以 <code>aapt dump badging &lt;release.apk&gt; | grep permissions</code> 复核实际 release 包权限集合，确保与本说明一致。</p>
 
 <h2>三、第三方 SDK 清单</h2>
