@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>沐沐英语点读 · 隐私政策（国内安卓版）</title>
+<style>
+  body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; max-width: 800px; margin: 0 auto; padding: 24px; line-height: 1.8; color: #222; }
+  h1 { font-size: 24px; border-bottom: 2px solid #f7ce4e; padding-bottom: 8px; }
+  h2 { font-size: 18px; margin-top: 28px; color: #b25e00; }
+  p, li { font-size: 15px; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 14px; }
+  th, td { border: 1px solid #e3e3e3; padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: #faf7ee; }
+  code { background: #f4f4f4; padding: 2px 6px; border-radius: 4px; }
+  .footer { margin-top: 36px; padding-top: 16px; border-top: 1px solid #eee; color: #888; font-size: 13px; }
+  .note { background: #fff8e6; border-left: 4px solid #f7ce4e; padding: 10px 14px; margin: 14px 0; font-size: 14px; }
+</style>
+</head>
+<body>
+<h1>沐沐英语点读 隐私政策（国内安卓版）</h1>
+<p><strong>生效日期：</strong>2026年8月4日</p>
+<p><strong>应用名称：</strong>沐沐英语点读</p>
+<p><strong>应用包名：</strong>com.mumu.english.reader</p>
+<p><strong>应用版本：</strong>国内安卓 <code>domestic</code> flavor（arm64-v8a，minSdk 30 / targetSdk 36）</p>
+<p><strong>开发者（主体）：</strong>MumuEnglish（沐沐英语）</p>
+<p><strong>联系方式：</strong>249210455@qq.com</p>
+
+<div class="note">
+本政策仅适用于「沐沐英语点读」国内安卓版。本应用为<strong>离线工具</strong>，不收集、不上传任何个人信息，未集成任何联网第三方 SDK，应用内不展示任何微信 / 二维码 / 站外购买引导。
+</div>
+
+<h2>一、我们收集的信息</h2>
+<p><strong>本应用不收集、不上传任何个人信息。</strong>沐沐英语点读是一款离线英语学习工具，所有功能均在您的设备本地完成：</p>
+<ul>
+  <li>您导入的 PDF 教材文件仅保存在本机应用沙箱目录，不会上传到任何服务器；</li>
+  <li>点读音频、播放进度、书签、合集分组等数据均仅存储于您的设备本地；</li>
+  <li>我们不要求注册账号，不收集姓名、手机号、邮箱、位置、设备标识符等任何个人信息；</li>
+  <li>应用<strong>未集成任何联网第三方 SDK</strong>（无广告、无统计、无推送、无社交分享 SDK）。</li>
+</ul>
+
+<h2>二、我们使用的权限与系统能力</h2>
+<p>本应用坚持「最小必要」原则，release 版本<strong>不申请任何危险权限</strong>。具体说明如下：</p>
+<table>
+  <tr><th>能力 / 权限</th><th>用途</th><th>是否需授权</th><th>是否联网</th></tr>
+  <tr><td>文件导入（系统文件选择器 SAF）</td><td>通过 Android 系统「文档选择器」<code>ACTION_OPEN_DOCUMENT</code> 由您主动选择 PDF；文件仅在您选择时访问并存入应用沙箱</td><td>否——走系统选择器，<strong>不申请 READ_EXTERNAL_STORAGE 等存储权限</strong></td><td>否</td></tr>
+  <tr><td>音频播放</td><td>播放点读 / 朗读音频为系统媒体能力</td><td>否——无需任何权限声明</td><td>否</td></tr>
+  <tr><td>文字朗读（TTS）</td><td>调用 Android <strong>系统内置 TTS 引擎</strong>朗读普通 PDF 选中行</td><td>否——<strong>无需联网、无需麦克风权限</strong></td><td>否</td></tr>
+  <tr><td>位置 / 相机 / 麦克风 / 通讯录 / 电话 等</td><td>—</td><td><strong>不申请</strong></td><td>—</td></tr>
+</table>
+<p>提交上架前，开发者应以 <code>aapt dump badging &lt;release.apk&gt; | grep permissions</code> 复核实际 release 包权限集合，确保与本说明一致。</p>
+
+<h2>三、第三方 SDK 清单</h2>
+<table>
+  <tr><th>SDK 名称</th><th>提供方</th><th>用途</th><th>是否联网</th><th>收集个人信息</th></tr>
+  <tr><td>无</td><td>—</td><td>本应用未集成任何第三方 SDK</td><td>否</td><td>无</td></tr>
+</table>
+<p>如后续版本接入任何 SDK，必须在此补充名称、提供方、用途、所收集字段及其隐私链接，并同步更新各应用商店后台备案信息。</p>
+
+<h2 id="children">四、儿童个人信息保护（特别条款）</h2>
+<p>本应用主要面向学龄儿童家长用于儿童英语启蒙，可能涉及不满 14 周岁儿童使用。我们严格遵守：</p>
+<ul>
+  <li>《中华人民共和国个人信息保护法》第三十一条：处理不满十四周岁未成年人个人信息的，应当取得未成年人的父母或者其他监护人的同意，并制定专门的处理规则；</li>
+  <li>《儿童个人信息网络保护规定》：收集、使用儿童个人信息须遵循正当必要、知情同意、目的明确、安全保障原则。</li>
+</ul>
+<p><strong>我们的承诺：</strong></p>
+<ol>
+  <li>本应用<strong>不收集任何儿童个人信息</strong>，不要求儿童注册，不收集姓名、肖像、声纹、位置等任何可识别儿童的信息；</li>
+  <li>所有学习数据（点读记录、进度、合集）均仅存储于设备本地，不存在向任何第三方传输儿童数据的情形；</li>
+  <li>如未来功能需要收集儿童个人信息，我们将<strong>事先取得监护人明示同意</strong>，并仅用于实现核心教育功能的最小必要范围；</li>
+  <li>监护人有权查阅、更正、删除儿童相关信息，可通过上方联系方式提出请求。</li>
+</ol>
+
+<h2>五、数据安全</h2>
+<p>您的所有学习资料与进度存储于设备本地沙箱目录，未经您主动导出不会被其他应用读取。我们建议用户妥善保管个人设备。</p>
+
+<h2>六、信息共享与转让</h2>
+<p>我们<strong>不会</strong>将任何用户数据出售、出租、共享或转让给任何第三方。</p>
+
+<h2>七、您的权利</h2>
+<p>您可随时通过上方联系方式就本政策及您的信息处理提出异议、查询，或获取删除本地数据的操作指引。</p>
+
+<h2>八、政策更新</h2>
+<p>如本政策发生变更，我们将在应用内及本页面更新生效日期与内容。</p>
+
+<div class="footer">
+  © 2026 MumuEnglish（沐沐英语）. 保留所有权利。<br />
+  备案信息：待补充（ICP 备案号 / 工信部 App 备案号）
+</div>
+</body>
+</html>
